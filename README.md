@@ -76,7 +76,7 @@ Release Please opens a release PR that updates `package.json`, the Chrome manife
 and the changelog. Merge that PR to create the GitHub release and attach the versioned ZIP and console snippet.
 
 The workflow uses the repository's `GITHUB_TOKEN`; no publishing token or Chrome Web Store account is needed.
-GitHub does not trigger PR workflows for release PRs created with this token, so the full check job runs on the
+GitHub may require approval before running CI on a bot-created release PR. The full check job also runs on the
 merge to `main` before the release is created. Asset uploads run in a separate job so a failed upload can be retried.
 
 The first release is bootstrapped from version `0.0.0` to `0.1.0`. Chrome Web Store publishing is not configured.
