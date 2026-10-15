@@ -10,11 +10,6 @@ changes, with short retries for React hydration. Opening the popup also refreshe
 Automatic detection requires site access for HTTP and HTTPS pages. Allow the extension to run **On all sites** in
 Chrome's extension settings, or grant access to the specific sites you want to check automatically.
 
-## Download
-
-Download the extension ZIP from the [latest GitHub release](https://github.com/sampotts/videojs-devtools/releases/latest),
-then follow the local installation steps below. The automatic source-code archives are not installable extensions.
-
 ## Build
 
 Requires Node.js 24+ and pnpm 12.6.0. From the repository root:
@@ -29,10 +24,11 @@ The unpacked extension is in `dist`. The distributable ZIP is `dist/videojs-devt
 
 ## Install locally
 
-1. Unzip the download into a folder you will keep on your computer.
-2. Open `chrome://extensions` and enable **Developer mode**.
-3. Choose **Load unpacked** and select the folder containing `manifest.json`.
-4. Pin **Video.js Dev Tools** and open it on a website.
+1. Download `videojs-devtools-<version>.zip` from the [latest GitHub release](https://github.com/sampotts/videojs-devtools/releases/latest).
+2. Unzip the download into a folder you will keep on your computer.
+3. Open `chrome://extensions` and enable **Developer mode**.
+4. Choose **Load unpacked** and select the folder containing `manifest.json`.
+5. Pin **Video.js Dev Tools** and open it on a website.
 
 For a local build, select `dist` directly. After rebuilding or replacing the files, click **Reload** on
 the extension's card in `chrome://extensions`.
