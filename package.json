@@ -1,0 +1,52 @@
+{
+  "name": "videojs-devtools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser developer tools for detecting Video.js players.",
+  "homepage": "https://github.com/sampotts/videojs-devtools",
+  "bugs": {
+    "url": "https://github.com/sampotts/videojs-devtools/issues"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampotts/videojs-devtools.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "vp build",
+    "zip": "node scripts/zip.mjs",
+    "snippet": "node scripts/snippet.mjs",
+    "typecheck": "tsgo --project tsconfig.json",
+    "test": "vp test run",
+    "icons": "node scripts/icons.mjs",
+    "lint": "vp check"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "^22.20.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@typescript/native-preview": "7.0.0-dev.20260421.2",
+    "@videojs/html": "10.1.0",
+    "@videojs/react": "10.1.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "esbuild": "^0.28.2",
+    "happy-dom": "^20.8.4",
+    "sharp": "0.35.4",
+    "tailwindcss": "4.3.3",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.1.0",
+    "vite-plus": "1.1.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.6.0"
+}

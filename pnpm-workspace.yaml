@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: true
+
+# Vite+ uses an npm alias for Vite and has its own version number.
+peerDependencyRules:
+  allowAny:
+    - vite
