@@ -3,8 +3,13 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
-  // Release Please's JSON updater owns the extension manifest's formatting.
-  fmt: { singleQuote: true, printWidth: 120, sortPackageJson: true, ignorePatterns: ['public/manifest.json'] },
+  // Release Please owns the formatting of these generated files.
+  fmt: {
+    singleQuote: true,
+    printWidth: 120,
+    sortPackageJson: true,
+    ignorePatterns: ['public/manifest.json', 'CHANGELOG.md'],
+  },
   base: './',
   plugins: [react(), tailwindcss()],
   build: {
