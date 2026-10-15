@@ -69,7 +69,7 @@ included. The icons are generated from `assets/icon.svg`; run `pnpm icons` to re
 
 Use Conventional Commits (`feat:`, `fix:`, and so on). CI runs lint, type checks, tests, and packaging.
 Release Please opens a release PR that updates `package.json`, the Chrome manifest version, the release manifest,
-and the changelog. Merge that PR to create the GitHub release and attach the versioned ZIP and console snippet.
+and the changelog. Merge that PR to create the GitHub release and attach the versioned extension ZIP.
 
 The workflow uses the repository's `GITHUB_TOKEN`; no publishing token or Chrome Web Store account is needed.
 GitHub may require approval before running CI on a bot-created release PR. The full check job also runs on the

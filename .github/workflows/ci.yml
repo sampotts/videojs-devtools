@@ -25,14 +25,11 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
-      - run: pnpm snippet
       - run: pnpm zip
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: videojs-devtools
-          path: |
-            dist/*.zip
-            dist/detect-videojs.js
+          path: dist/*.zip
           if-no-files-found: error
 
   release:
@@ -65,7 +62,7 @@ jobs:
         with:
           name: videojs-devtools
           path: dist
-      - run: gh release upload "$TAG" dist/*.zip dist/detect-videojs.js --clobber
+      - run: gh release upload "$TAG" dist/*.zip --clobber
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
